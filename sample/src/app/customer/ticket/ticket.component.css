@@ -1,0 +1,13 @@
+input{
+    width:400px;
+    margin-bottom: 50px;
+}
+.nbv{
+    margin-left: 250px;
+    margin-top: 130px;
+}
+input[type="submit"]{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}

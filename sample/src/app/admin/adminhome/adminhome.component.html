@@ -1,0 +1,39 @@
+<div class="hhhh">
+    <div class="row">
+        <div class="col">
+            <button (click)="openmodal()" class="lmnb">Add</button>
+            <div [class]="op">
+                <div class="modal1">
+                    <app-popupadd></app-popupadd>
+                    <button (click)="closemodal()" class="do">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered">
+                <thead class="table-row" >
+                    <td class="table-cell">Username</td>
+                    <td class="table-cell">password</td>
+                    <td class="table-cell">productnumber</td>
+                    <td class="table-cell">delete</td>
+                    
+                 
+                </thead>
+                <tbody class="table-row">
+                    <tr *ngFor="let h of w">
+                    <td class="table-cell">{{h.username}}</td>
+                    <td class="table-cell">{{h.password}}</td>
+                    <td class="table-cell">{{h.productno}}</td>
+                    <td class="table-cell">
+                        <button>delete</button>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,21 @@
+<div class="row nbv">
+    <table border="2px" style="color: blue;">
+        <tr>
+           <td style="width:50px">ticketno</td>
+           <td style="width:50px">productno</td>
+           <td>complaint</td>
+           <td style="width:50px">status</td>
+        </tr>
+        <tr *ngFor="let u of g.complaints1">
+           <td style="width:50px">{{u.ticketno}}</td>
+           <td style="width:50px">{{g.productno}}</td>
+           <td>{{u.complaint}}</td>
+           <td style="width:50px" *ngIf="u.status===0;else elseblock">closed</td>
+           <ng-template #elseblock>
+            <td style="width:50px">open</td>
+           </ng-template>
+           <!-- <td>{{u.status}}</td> -->
+        </tr>
+   </table>
+</div>
+

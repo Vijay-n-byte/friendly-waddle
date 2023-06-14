@@ -1,0 +1,62 @@
+.changepass{
+    height:100%;
+    width:auto;
+    border: 1px solid rebeccapurple;
+}
+
+.btn{
+    color: brown;
+    background-color: aqua;
+}
+.container-fluid{
+    background-color: violet;
+    /* height:100vh; */
+    
+}
+.top{
+    height: 100vh;
+}
+
+.adna{
+    background-color: violet;
+    height: 8%;
+    border:1px solid violet;
+    
+}
+.table{
+    width:100%;
+}
+img{
+    margin-top: 30px;
+}
+.jo{
+    height:84%;
+    border:1px solid black;
+    overflow-y: auto;
+    background-color: aliceblue;
+    
+}
+.adfo{
+    height:8%;
+    margin-left: 10px;
+    border:1px solid violet;
+    background-color: violet;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 2px;
+  
+
+}
+
+.popq{
+    margin-top: 70px;
+}
+ul li{
+    
+    /* font-size: 20px; */
+    /* margin-bottom: 40px; */
+    /* background-color: yellowgreen; */
+    
+}

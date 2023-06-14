@@ -1,0 +1,117 @@
+<div class="top">
+    <div class="container-fluid" style="height: 8%;">
+      <div class="row adna">
+        <div class="col-3">
+        </div>
+        <div class="col-8 ">
+          <p style="color:azure; font-size: 30px; margin-left: 140px;">ABC Telecom </p>
+        </div>
+        <div class="col-1">
+          <button style="margin-top: 15px;" (click)="logout()">logout</button>
+        </div>
+      </div>
+   </div>
+   <div class="container-fluid jo">
+    <div class="row changepass hhhh">
+        <div class="col-8">
+            <table class="table table-bordered">
+                <thead class="table-row">
+                    <td class="table-cell">ticket number</td>
+                   
+                    <td class="table-cell">complaint</td>
+                    <td class="table-cell ">status</td>
+                    <td class="table-cell ">pincode</td>
+                    <td class="table-cell">assignedto</td>
+                    <!-- <td class="table-cell"> update</td> -->
+                </thead>
+                <tbody class="table-row" >
+                    <tr *ngFor="let h of ff.c;let y=index;">
+                        <td class="table-cell">{{h.ticketno}}</td>
+                        <td class="table-cell">{{h.complaint}}</td>
+                        <td class="table-cell">{{h.status}}</td>
+                        <td class="table-cell">{{h.pincode}}</td>
+                        <td class="table-cell" >
+                          <div *ngIf="h.asignedto==null; else elseblock;">
+                            <select #assign (change)="assigned($event,h.ticketno)">
+                              <option value="default">---</option>
+                              <option *ngFor="let r of ff.l" value="{{r.username}}">
+                                {{r.name}}
+                              </option>
+                            </select>
+                            </div>
+                            <ng-template #elseblock>
+                              {{h.asignedto}}
+                           </ng-template>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-4">
+            <table class="table table-bordered">
+                <thead class="table-row">
+                    <td class="table-cell">engineer name</td>
+                    <td class="table-cell">code</td>
+                    <td class="table-cell ">pincode</td>
+                </thead>
+                <tbody class="table-row" >
+                    <tr *ngFor="let h of ff.l;let y=index;">
+                        <td class="table-cell">{{h.name}}</td>
+                        <td class="table-cell">{{h.username}}</td>
+                        <td class="table-cell">{{h.pincode}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+  </div>
+   </div>
+   <div class="container-fluid" style="height: 8%;">
+      <div class="row adfo">
+         <h5 style="color: azure;"> &#169; copyright 2011</h5>
+       </div>
+   </div>
+  </div>
+  
+  <!-- {
+    "c": [
+      {
+        "ticketno": 2,
+        "complaint": "network breaks",
+        "status": 1,
+        "asignedto": null,
+        "pincode": "12121"
+      },
+      {
+        "ticketno": 52,
+        "complaint": "network not working",
+        "status": 1,
+        "asignedto": null,
+        "pincode": "123789"
+      }
+    ],
+    "l": [
+      {
+        "username": "engineer1",
+        "password": "en1",
+        "pincode": "12121",
+        "name": "vivek",
+        "designations": "engineer"
+      },
+      {
+        "username": "engineer2",
+        "password": "en2",
+        "pincode": "12123",
+        "name": "sunak",
+        "designations": "engineer"
+      },
+      {
+        "username": "engineer3",
+        "password": "en3",
+        "pincode": "12131",
+        "name": "selvam",
+        "designations": "engineer"
+      }
+    ]
+  }
+   -->

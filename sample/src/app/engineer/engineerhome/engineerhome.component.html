@@ -1,0 +1,63 @@
+
+  
+<div class="top">
+    <div class="container-fluid" style="height: 8%;">
+      <div class="row adna">
+        <div class="col-3">
+        </div>
+        <div class="col-8 ">
+          <p style="color:azure; font-size: 30px; margin-left: 140px;">ABC Telecom </p>
+        </div>
+        <div class="col-1">
+          <button style="margin-top: 15px;" (click)="logout()">logout</button>
+    
+        </div>
+        
+      </div>
+      
+  
+   </div>
+   <div class="container-fluid jo">
+    <div class="row changepass hhhh">
+      <div class="col-2">
+
+      </div>
+        <div class="col-8">
+            <table class="table table-bordered">
+                <thead class="table-row">
+                    <td class="table-cell">ticket number</td>
+                    <td class="table-cell">complaint</td>
+                    <td class="table-cell ">status</td>
+                    <td class="table-cell ">pincode</td>
+                </thead>
+                <tbody class="table-row" >
+                    <tr *ngFor="let h of ff;let y=index;">
+                        <td class="table-cell">{{h.ticketno}}</td>
+                        <td class="table-cell">{{h.complaint}}</td>
+                          <td class="table-cell">
+                            <button (click)="closeticket(h.ticketno,h.assignedto)">close the ticket</button>
+                          </td>
+                     
+                        <td class="table-cell">{{h.pincode}}</td>
+                        
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <div class="col-2">
+
+        </div>  
+   
+  </div>
+  
+   </div>
+   <div class="container-fluid" style="height: 8%;">
+      <div class="row adfo">
+         <h5 style="color: azure;"> &#169; copyright 2011</h5>
+       </div>
+   </div>
+  </div>
+
+
+
+  <!-- [{"ticketno":2,"complaint":"network breaks","status":1,"asignedto":"engineer1","pincode":"12121"}] -->

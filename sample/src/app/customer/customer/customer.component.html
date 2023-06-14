@@ -1,0 +1,45 @@
+
+  
+<div class="top">
+  <div class="container-fluid" style="height: 8%;">
+    <div class="row adna">
+      <div class="col-3">
+      </div>
+      <div class="col-8 ">
+        <p style="color:azure; font-size: 30px; margin-left: 140px;">ABC Telecom </p>
+      </div>
+      <div class="col-1">
+        <button style="margin-top: 15px;" (click)="logout()">logout</button>
+  
+      </div>
+      
+    </div>
+    
+
+ </div>
+ <div class="container-fluid jo">
+ 
+  <div class="row changepass">
+    <div class="col-2">
+        <ul>
+            <li><a routerLink="">{{g.username}}</a></li>
+            <li><a routerLink="raiseticket">raise ticket</a></li>
+            <li><a routerLink="tickethistory">history</a></li>
+            <li><a routerLink="">services</a></li>
+        </ul>
+    </div>
+    <div class="col-8">
+        <router-outlet></router-outlet> 
+    </div>
+    <div class="col-2">
+    
+  </div>
+</div>
+
+ </div>
+ <div class="container-fluid" style="height: 8%;">
+    <div class="row adfo">
+       <h5 style="color: azure;"> &#169; copyright 2011</h5>
+     </div>
+ </div>
+</div>

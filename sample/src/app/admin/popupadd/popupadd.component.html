@@ -1,0 +1,9 @@
+<form #formi="ngForm" (ngSubmit)="submitvalue(formi)">
+     <label for="username">Username:</label><br>
+    <input class="in" type="text" name="username" ngModel required><br> 
+     <label for="password">Password:</label><br>
+    <input class="in" type="text" name="password" ngModel required><br>
+    <label for="productno">Productno:</label><br>
+    <input class="in" type="number" name="productno" ngModel required><br>
+    <input type="submit" name="submit">
+</form>
